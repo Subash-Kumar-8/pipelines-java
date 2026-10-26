@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: default
+  demands: 
+  - Agent.Name -equals SUBASH
 
 steps:
 - task: Maven@4
